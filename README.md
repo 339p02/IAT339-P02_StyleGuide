@@ -1,1 +1,1 @@
-IAT339-P02_StyleGuide
+IAT339-Style-Guide
