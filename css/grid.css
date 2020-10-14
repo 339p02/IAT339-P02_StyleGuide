@@ -24,7 +24,7 @@
 }
 
 .code-box {
-    background-color: #ac6d57;
+    background-color: pink;
     padding: 20px;
     display: block;
     color: white;
@@ -33,7 +33,7 @@
 }
 
 .element-box{
-    
+
 }
 
 /*========================interaction flex setting=============*/
@@ -78,15 +78,15 @@
     .interactive_elements .box3{
         width: 100%;
     }
-    
+
     .interactive_elements code{
         width: 90%;
     }
-    
+
     .nav-guide a{
         width: 100%;
     }
-    
+
     .sample .product-box{
         margin-bottom: 50px;
     }
@@ -98,15 +98,15 @@
     .interactive_elements .box3{
         width: 100%;
     }
-    
+
     .interactive_elements code{
         width: 90%;
     }
-    
+
     .nav-guide a{
         width: 100%;
     }
-    
+
     .sample .product-box{
         margin-bottom: 50px;
     }
