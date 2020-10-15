@@ -184,7 +184,17 @@ font-size: 25px;
 
 .cart-box {
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+@media (max-width:810px){
+    .form-box{
+        width: 100%;
+    }
+    
+    .text-input input{
+        width: 300px;
+    }
 }
 
 /*=======Font sample===========*/
