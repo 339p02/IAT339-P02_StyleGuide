@@ -129,9 +129,7 @@ font-size: 25px;
 
 .sample-heading {
     display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
 }
 
 .sample-heading h1,
@@ -139,12 +137,11 @@ font-size: 25px;
 .sample-heading h3,
 .sample-heading h4 {
     padding: 0 20px 20px 0;
-    text-align: left;
     margin: 0;
 
 }
 
-@media (min-width: 600px){
+@media (min-width: 590px){
     .text_elements .container{
         flex-direction: row;
     }
@@ -152,6 +149,22 @@ font-size: 25px;
     .sample-heading{
         flex-direction: row;
         flex-wrap: nowrap;
+    }
+    
+}
+
+@media (max-width: 590px){
+    .text_elements .container{
+        flex-direction: column;
+    }
+    
+    .sample-heading{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .text_elements .code-box{
+       width: 90%;
     }
     
 }
