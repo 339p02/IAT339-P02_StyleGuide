@@ -6,9 +6,11 @@
     <meta charset="utf-8">
     <title>P01 - Style Guide Template</title>
 
+    <link href="css/responsive-nav.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/interaction.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
+
 
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -185,11 +187,11 @@
             <h3 class="type-title">Headings</h3>
             <div class="code-box">
                 <h4 class="code-render-title">Sample code:</h4>
-            
-                    <code>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>
-                        &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
-                        &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
-                        &lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+
+                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                    &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                    &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                    &lt;h4&gt;Heading 4&lt;/h4&gt;</code>
 
             </div>
 
@@ -248,7 +250,7 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements" class="combined_elements">
-        <h2>Combined Elements</h2>
+        <h2 class="section-title">Combined Elements</h2>
 
         <!-- Main navigation SECTION // -->
         <section class="element container">
@@ -263,16 +265,29 @@
                     &lt;a class="nav-link" href="#"&gt;Contact&lt;/a&gt;<br>
                     &lt;/nav&gt;</code>
             </div>
-            <nav class="element-box">
+            <div class="element-box">
                 <h4 class="code-render-title">Rendered element:</h4>
-                <img src="./img/nv-bg.png" alt="" class="nav-img">
-                <div class="main-nav">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Shop</a>
-                    <a class="nav-link" href="#">Contact</a>
+
+                <div class="sample-nav">
+                    <nav>
+
+                        <!-- nav icon// -->
+                        <label for="hamburger">&#9776;</label>
+                        <input type="checkbox" id="hamburger" />
+
+                        <!-- nav menu// -->
+                        <div class="nav-items">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="index.html" class="nav-link">About</a>
+                            <a href="product_listing.html" class="nav-link">Shop</a>
+                            <a href="index.html" class="nav-link">Contact</a>
+                            <a href="checkout.html" class="nav-link"><img src="./img/cart.svg" alt=""></a>
+                        </div>
+
+                    </nav>
+                    <img src="./img/nv-bg.png" alt="">
                 </div>
-            </nav>
+            </div>
 
 
         </section>
@@ -290,7 +305,7 @@
                     &lt;p&gt;$50.00&lt;/p&gt;<br>
                     &lt;a href = "#">view details&lt;/a&gt;</code>
             </div>
-            
+
             <div class="element-box">
                 <h4 class="code-render-title">Rendered element:</h4>
                 <div class="product-list">
@@ -379,8 +394,8 @@
             </div>
         </section>
 
-        
-        
+
+
         <!-- // check out section -->
         <section class="element container sample">
             <h3 class="type-title">Checkout Cart</h3>

@@ -127,30 +127,35 @@ h4{
 }
 
 /*=======NAVIGATION===========*/
-.nav-img {
-    width: 600px;
+.sample-nav nav{
+    background-color: #fbf3f3;
+    position: relative;
 }
 
-.main-nav {
-    position: relative;
-    top: -265px;
-    background-color: #f7ebec;
-    padding-top: 8px;
-    padding-bottom: 8px;
+.sample-nav img{
+    width: 100%;
+}
+
+.sample-nav a{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.sample-nav .nav-link img{
+    width: 20px;
+ 
+    
 }
 
 @media (max-width: 810px) {
-    .main-nav a {
-        font-size: 12px;
+    .sample-nav .nav-items a{
+        font-size: 16px;
+        padding: 5px;
+        padding-top: 10px;
     }
-
-    .main-nav {
-        top: -140px;
-        width: 300px;
-    }
-
-    .nav-img {
-        width: 300px;
+    
+    .sample-nav .nav-link img{
+        
     }
 }
 

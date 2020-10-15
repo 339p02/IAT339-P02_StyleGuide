@@ -27,12 +27,13 @@
 }
 
 .code-box {
-    background-color: black;
     padding: 20px;
     color: white;
     font-size: 15px;
     flex: 1 1 20%;
+     background-color: black;
 }
+
 
 
 .element-box{
