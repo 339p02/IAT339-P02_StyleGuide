@@ -23,31 +23,38 @@ h1 {
     font-size: 45px;
 }
 
-h2{
+h2 {
     font-size: 35px;
 }
 
-h3{
+h3 {
     font-size: 30px;
 }
 
-h4{
+h4 {
     font-size: 20px;
 }
 
-.section-title{
+.section-title {
     text-align: center;
-    
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0;
+    margin: 0 30px;
+
 }
 
 
-.code-render-title{
+.code-render-title {
     margin-bottom: 10px;
+    color: black;
 }
 
-
-
-
+.code-background{
+    background-color: #9c644c;
+    padding: 20px;
+}
 /*=======INTERACTIVE ELEMENTS===========*/
 .interactive_elements {
     padding-bottom: 50px;
@@ -75,7 +82,8 @@ h4{
 
 .text_elements ol {
     font-size: 20px;
-    padding-left:20px;;
+    padding-left: 20px;
+    ;
 }
 
 
@@ -90,6 +98,7 @@ h4{
         margin: 0;
         width: 100%;
     }
+    
 
 }
 
@@ -129,72 +138,72 @@ h4{
 
 
 @media (max-width: 1024px) {
-    .product-list .img-frame{
+    .product-list .img-frame {
         width: 140px;
         height: 140px;
     }
-    
-    .product-list .img-link img{
+
+    .product-list .img-link img {
         width: 140px;
         height: 140px;
     }
-    
-    .product-box h4, .product-box p{
+
+    .product-box h4,
+    .product-box p {
         font-size: 15px;
         margin: 0;
     }
-        
-    .product-box a{
+
+    .product-box a {
         font-size: 14px;
     }
-    
-    
+
+
 }
 
 @media (max-width: 768px) {
-    .combined_elements .container{
+    .combined_elements .container {
         flex-direction: column;
     }
-    
-    .combined_elements .code-box{
+
+    .combined_elements .code-box {
         width: 90%;
     }
-    
-    
-    
+
+
+
 }
+
 /*=======NAVIGATION===========*/
-.sample-nav nav{
+.sample-nav nav {
     background-color: #fbf3f3;
     position: relative;
     z-index: 99;
 }
 
-.sample-nav img{
+.sample-nav img {
     width: 100%;
 }
 
-.sample-nav a{
+.sample-nav a {
     font-size: 18px;
     padding-top: 15px;
 }
 
-.sample-nav .nav-link img{
+.sample-nav .nav-link img {
     width: 20px;
- 
-    
+
+
 }
 
 @media (max-width: 1024px) {
-    .sample-nav .nav-items a{
+    .sample-nav .nav-items a {
         font-size: 16px;
         padding: 5px;
         padding-top: 10px;
     }
-    
-    .sample-nav .nav-link img{
-        
-    }
+
+    .sample-nav .nav-link img {}
 }
 
 /*=======FORM ELEMENTS===========*/
@@ -222,7 +231,7 @@ h4{
 
 
 
- 
+
 }
 
 
@@ -252,6 +261,11 @@ h4{
 
 /*====================others==================*/
 
+.basic-idea .container {
+    border-bottom: 2px solid black;
+    flex-direction: column;
+}
+
 .basic-idea h3 {
     padding-left: 60px;
     margin-bottom: 0;
@@ -266,71 +280,27 @@ h4{
     margin-bottom: 40px;
 }
 
-.font-sample h2 {
-    border: none;
-    text-align: left;
-    font-size: 35px;
-    margin: 0;
-    padding: 0;
-}
-
-.font-sample h1 {
-    font-size: 45px;
-    margin-bottom: 0;
-    margin-top: 75px;
-}
-
-.font-sample p {
-    width: 500px;
-}
-
 
 .color-platte img {
     width: 80%;
-    margin-left: 80px;
-    margin-top: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.icon {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 
 }
 
-@media (max-width:810px) {
-    .font-sample h2 {
-        border: none;
-        text-align: left;
-        font-size: 27px;
-        margin: 0;
-        padding-top: 10px;
-    }
-
-    .font-sample h1 {
-        font-size: 32px;
-        margin-bottom: 0;
-        margin-top: 75px;
-    }
-
-    .font-sample p {
-        width: 90%;
-    }
-    
-    .color-platte img {
-    width: 100%;
-        margin-left: 30px;
-        margin-top: 30px;
-
+.citation {
+    width: 90%;
 }
-    
-    .icon{
-        flex-direction: row;
-        flex-wrap: nowrap;
-        
-    }
-    
-    .citation{
-        width: 90%;
-    }
-    
-    .citation li{
-        width: 90%;
-    }
+
+.citation li {
+    width: 90%;
+}
 
 
 }
@@ -347,4 +317,18 @@ h4{
 
 .icon h3 {
     width: 100%;
+}
+
+.sg-nav .nav-items a{
+   flex:1 1 10%;
+}
+
+.sg-nav .nav-items{
+    justify-content: center;
+}
+
+.sg-title{
+    margin-top: 130px;
+    text-align: center;
+    font-size: 60px;
 }
