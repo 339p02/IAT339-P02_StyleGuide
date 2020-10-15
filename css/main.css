@@ -251,11 +251,19 @@ h4 {
 
 .cart h4 {
     text-align: right;
-
     padding-right: 10px;
     font-weight: 100;
 }
 
+@media (max-width:590px){
+    .cart-box p{
+        padding-left: 30px;
+    }
+    
+    .cart-box p, .cart h4{
+        font-size: 14px;
+    }
+}
 
 
 /*====================others==================*/

@@ -19,7 +19,9 @@ nav label,
     display: none;
 }
 
-
+#sg-hamburger {
+    display: none;
+}
 
 /* Horizontal Menu Items */
 .nav-items {

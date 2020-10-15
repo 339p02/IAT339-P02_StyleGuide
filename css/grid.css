@@ -193,7 +193,7 @@ font-size: 25px;
     }
     
     .text-input input{
-        width: 300px;
+        flex: 1 1 100%;
     }
 }
 
