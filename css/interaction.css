@@ -110,8 +110,8 @@ from https://css-tricks.com/float-labels-css/
 }
 
 /*Navigation link styling*/
-
 .nav-link {
+    position: relative;
     text-decoration: none;
     opacity: .5;
     padding: 20px;
@@ -124,11 +124,30 @@ from https://css-tricks.com/float-labels-css/
     border-bottom: 3px solid transparent;
 }
 
+/****Original style*****
 .nav-link:hover {
     opacity: 1;
     border-bottom: 3px solid #9c644c;
     color: #9c644c;
 }
+*/
+.nav-link:before {
+  content: "";
+  background-color: #cf438b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-link:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 
 /*submit reset button style*/
 .submit-reset {
