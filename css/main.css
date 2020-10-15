@@ -220,24 +220,9 @@ h4{
     }
 
 
-    .sample .cart {
-        width: 90%;
-    }
 
-    .sample .cart-box {
-        flex: 1 1 80%;
-        width: 90%;
-    }
 
-    .sample .cart-box img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .sample .cart p {
-        font-size: 15px;
-        padding: 40px 10px;
-    }
+ 
 }
 
 
@@ -258,9 +243,9 @@ h4{
 
 .cart h4 {
     text-align: right;
-    padding-top: 10px;
-    padding-right: 50px;
-    font-weight: 200;
+
+    padding-right: 10px;
+    font-weight: 100;
 }
 
 
