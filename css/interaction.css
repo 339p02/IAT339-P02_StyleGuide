@@ -2,83 +2,54 @@
 This effect is design by myself based on the tutorial
 from https://css-tricks.com/float-labels-css/
 */
+.text-input{
+  position: relative;
+  margin-top: 30px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
 
 .text-input label {
-    position: relative;
-    top: 0px;
-    bottom: 0;
-    left: -199px;
-    height: 1px;
-    transition: 0.6s ease;
-    opacity: .6;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  transition: 0.6s;
+  opacity: .6;
 }
 
 .text-input input {
-    height: 30px;
-    width: 200px;
-    transition: transform .6s ease;
-
+  height: 26px;
+  width: 200px;
+  transition: .6s;
+	background-color: white;
 }
 
 .text-input input:hover {
-    transform: scale(1.1);
-}
-
-.text-input input:hover + label {
-    left: -50px;
+  transform: scale(1.1);
 }
 
 .text-input input:focus {
-    transform: scale(1);
-    border-width: 3px;
+  transform: scale(1.1);
 }
 
-.text-input input:focus + label {
-    left: -50px;
-    opacity: 1;
+.text-input input:valid {
+  transform: scale(1.1);
+  color: rgb(0);
+  background-color: rgb(255);
 }
 
-.text-input input:valid + label {
-    left: -50px;
+.text-input input:hover+label {
+  transform: scale(1.2);
 }
 
-/*=======COMBINED TEXT INPUT ELEMENTS===========*/
-
-.combined_elements .text-input input {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    width: 230px;
-}
-
-.combined_elements .text-input label {
-    left: -230px;
-  
-}
-
-.combined_elements .text-input input:hover {
-    transform: scale(1.1);
-}
-
-.combined_elements .text-input input:hover + label {
-   left: -70px;
- 
-}
-
-.combined_elements .text-input input:focus {
-    transform: scale(1);
-    border-width: 3px;
-  
-}
-
-.combined_elements .text-input input:focus + label {
-    left: -70px;
-    opacity: 1;
-
-}
-
-.combined_elements .text-input input:valid + label {
-    left: -170px;
-
+.text-input input:focus+label,
+.text-input input:valid+label {
+  top: -25px;
+  left: -10px;
+  transform: scale(0.9);
+  opacity: 1;
 }
 
 
