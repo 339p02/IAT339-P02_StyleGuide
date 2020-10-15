@@ -151,13 +151,11 @@ from https://css-tricks.com/float-labels-css/
     padding-top: 6px;
     transition: .3s ease;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
 }
 
 .nav-link:hover {
     opacity: 1;
     border-bottom: 3px solid #9c644c;
-    border-top: 3px solid #9c644c;
     color: #9c644c;
 }
 
