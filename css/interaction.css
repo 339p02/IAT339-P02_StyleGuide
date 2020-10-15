@@ -218,3 +218,43 @@ from https://css-tricks.com/float-labels-css/
 .nav-guide a:hover {
     border: none;
 }
+
+
+
+/*
+footer
+*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex: 100%;
+}
+
+.footer h4{
+  font-size: 1em;
+  font-style: bold;
+}
+
+.footer p{
+  font-size: 0.8em;
+}
+
+.footer .iconBox{
+	display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 10px;
+  padding: 0.5em;
+  border-top:solid;
+  justify-content: center;
+}
+
+.footer .iconBox .imgsize {
+  width: 25px;
+  height: 25px;
+  margin: 0.5em;
+}
