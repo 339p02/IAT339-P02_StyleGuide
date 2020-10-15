@@ -4,6 +4,9 @@
     flex-wrap: wrap;
     border-bottom: 2px solid black;
     padding-bottom: 80px;
+    align-items: baseline;
+    margin: 0 2rem;
+    
 
 }
 
@@ -26,14 +29,38 @@
 .code-box {
     background-color: black;
     padding: 20px;
-    display: block;
     color: white;
     font-size: 15px;
-    width: 300px;
+    flex: 1 1 20%;
 }
 
+
 .element-box{
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+@media (max-width:1024px){
+    h1{
+        font-size:  35px;
+    }
     
+    h2{
+        font-size: 28px;
+    }
+    
+    h3{
+        font-size:25px;
+    }
+    
+    h4{
+        font-size:19px;
+    }
+    
+    
+    p{
+        font-size: 15px;
+    }
 }
 
 /*========================interaction flex setting=============*/
@@ -104,6 +131,7 @@ font-size: 25px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: center;
 }
 
 .sample-heading h1,
@@ -114,6 +142,18 @@ font-size: 25px;
     text-align: left;
     margin: 0;
 
+}
+
+@media (min-width: 600px){
+    .text_elements .container{
+        flex-direction: row;
+    }
+    
+    .sample-heading{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
 }
 
 /*======================Cart===========*/
