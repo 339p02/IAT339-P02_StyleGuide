@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 p {
     font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 
 html {
@@ -58,7 +59,7 @@ h4 {
 .code-background {
     background-color: #9c644c;
     padding: 20px;
-    width:100%;
+    width: 100%;
 }
 
 
@@ -107,10 +108,11 @@ h4 {
 
 
 /*=======PRODUCTION LIST===========*/
-.product-list{
+.product-list {
     display: flex;
     flex-wrap: wrap;
 }
+
 .product-box {
     display: flex;
     flex: 1 1 25%;
@@ -145,8 +147,8 @@ h4 {
     .combined_elements .code-box {
         width: 100%;
     }
-    
-     .product-box p {
+
+    .product-box p {
         font-size: 16px;
     }
 
@@ -179,7 +181,7 @@ h4 {
 .sample-nav img {
     width: 100%;
     border: 1px solid black;
-    border-top:none;
+    border-top: none;
 }
 
 .sample-nav a {
@@ -189,7 +191,7 @@ h4 {
 
 .sample-nav .nav-link img {
     width: 20px;
-    border:none;
+    border: none;
 
 
 }
@@ -200,8 +202,6 @@ h4 {
         padding: 5px;
         padding-top: 10px;
     }
-
-    .sample-nav .nav-link img {}
 }
 
 
@@ -213,31 +213,43 @@ h4 {
 /*======================Cart===========*/
 
 
-.cart img {
-    width: 150px;
-    height: 150px;
+.cart-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
 }
 
-
-.cart-box p {
-    padding-left: 80px;
+.cart img,
+.cart p {
+    flex: 1 1 35%;
+    font-size: 17px;
+    text-align: center;
 }
 
 .cart h4 {
     text-align: right;
-    padding-right: 10px;
-    font-weight: 100;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+.cart img {
+    width: 10vw;
+    padding: 20px;
 }
 
 @media (max-width:590px) {
-    .cart-box p {
-        padding-left: 30px;
+
+    .cart p {
+        font-size: 16px;
     }
 
-    .cart-box p,
     .cart h4 {
-        font-size: 14px;
+        font-size: 17px;
+        margin-bottom: 60px;
     }
+
 }
 
 
@@ -246,25 +258,27 @@ h4 {
 .basic-idea .container {
     border-bottom: 2px solid black;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 .basic-idea h3 {
     padding-left: 60px;
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .basic-idea p {
     padding-left: 60px;
     margin-top: 8px;
-    width: 80%;
-    font-size: 17px;
-    margin-bottom: 40px;
+    width: 100%;
+    font-size: 16px;
 }
 
 @media (max-width:590px) {
     .basic-idea h3 {
         padding-left: 0;
+        margin-top: 20px;
+        ;
     }
 
     .basic-idea p {
@@ -274,9 +288,8 @@ h4 {
 }
 
 .color-platte img {
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 100%;
+    border: 1px solid black;
 }
 
 .icon {
@@ -303,13 +316,16 @@ h4 {
 }
 
 .icon img {
-    width: 50px;
-    margin-right: 40px;
+    width: 8vw;
+    margin-right: 4vw;
+    margin-top: 30px;
 }
 
 .icon h3 {
     width: 100%;
 }
+
+
 
 .sg-nav .nav-items a {
     flex: 1 1 10%;
@@ -320,7 +336,9 @@ h4 {
 }
 
 .sg-title {
-    margin-top: 130px;
+    margin-top: 120px;
     text-align: center;
     font-size: 60px;
 }
+
+

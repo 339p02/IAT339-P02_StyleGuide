@@ -229,38 +229,58 @@ from https://css-tricks.com/float-labels-css/
 /*
 footer
 */
-.footer{
+footer{
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-    width: 92vw;
-  flex: 1 1 100%;
+  background: #fbf3f3;
+  width:100%;
+    margin-top: 30px;
 }
 
 
-.footer h4{
-  font-size: 1em;
-  font-style: bold;
+footer p{
+  font-size: 15px;
+    flex: 1 1 33.3%;
 }
 
-.footer p{
-  font-size: 0.8em;
-}
-
-.footer .iconBox{
+footer .iconBox{
 	display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 10px;
-  padding: 0.5em;
-  border-top:solid;
+  flex: 1 1 33.3%;
   justify-content: center;
 }
 
-.footer .iconBox .imgsize {
-  width: 25px;
-  height: 25px;
+footer .iconBox img{
+  width: 20px;
+  height: 20px;
   margin: 0.5em;
+    margin-bottom: 20px;
+}
+
+footer .linkBox{
+    flex: 1 1 33.3%;
+    display: flex;
+     margin-bottom: 20px;
+}
+
+footer .linkBox a {
+	text-decoration: none;
+	color: black;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  opacity: .5;
+}
+
+footer .linkBox a:hover {
+	color: #d9a411;
+  opacity: 1;
+}
+
+@media (max-width: 600px){
+    footer .linkBox{
+        flex-direction: column;
+    }
 }
