@@ -131,6 +131,7 @@ font-size: 25px;
 .sample-heading {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .sample-heading h1,
