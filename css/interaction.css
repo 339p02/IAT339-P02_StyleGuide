@@ -40,12 +40,6 @@ from https://css-tricks.com/float-labels-css/
     opacity: 1;
 }
 
-.text-input input:valid {
-    /* transform: scale(1.1);*/
-    color: rgb(0);
-    background-color: rgb(255);
-}
-
 .text-input input:hover + label {
     transform: scale(1.2);
 }
@@ -102,7 +96,7 @@ from https://css-tricks.com/float-labels-css/
   content: '';
   width: 20px;
   height: 20px;
-  border: 1px solid #9c644c;
+  border: 1px solid black;
   background: #9c644c;
   display: inline-block;
   border-radius: 50%;
