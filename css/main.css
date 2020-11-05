@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 p {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
@@ -5,6 +8,7 @@ p {
 
 html {
     font-family: 'PT Sans', sans-serif;
+    background-color: #fbf3f3;
 }
 
 h3,
@@ -54,15 +58,13 @@ h4 {
 .code-background {
     background-color: #9c644c;
     padding: 20px;
+    width:100%;
 }
 
 
 /*=======INTERACTIVE ELEMENTS===========*/
 
 
-.interactive_elements h2 {
-    margin-bottom: 30px;
-}
 
 .interactive_elements code {
     width: 400px;
@@ -83,7 +85,6 @@ h4 {
 .text_elements ol {
     font-size: 20px;
     padding-left: 20px;
-    ;
 }
 
 
@@ -106,60 +107,37 @@ h4 {
 
 
 /*=======PRODUCTION LIST===========*/
-.product-list {
-    display: flex;
+.product-container {
+    flex: 1 1 100%;
+    width: 100%;
     flex-wrap: wrap;
 }
 
 .product-box {
-    margin-right: 30px;
-    text-align: center;
-    margin-bottom: 50px;
+    display: flex;
+    flex: 1 1 25%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-box h4 {
-    font-weight: 400;
-    margin-bottom: 0;
-    padding-top: 15px;
-    font-size: 17px;
-    margin-top: 0;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0;
+    text-align: center;
+    width: 230px;
 }
 
 .product-box p {
-    margin-top: 0;
-    padding-top: 15px;
-    margin-bottom: 0;
     font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
 .product-box a {
-    padding-top: 0;
+    margin-bottom: 35px;
 }
 
-
-@media (max-width: 1024px) {
-    .product-list .img-frame {
-        width: 140px;
-        height: 140px;
-    }
-
-    .product-list .img-link img {
-        width: 140px;
-        height: 140px;
-    }
-
-    .product-box h4,
-    .product-box p {
-        font-size: 15px;
-        margin: 0;
-    }
-
-    .product-box a {
-        font-size: 14px;
-    }
-
-
-}
 
 @media (max-width: 768px) {
     .combined_elements .container {
@@ -167,7 +145,24 @@ h4 {
     }
 
     .combined_elements .code-box {
-        width: 90%;
+        width: 100%;
+    }
+    
+     .product-box p {
+        font-size: 16px;
+    }
+
+    .product-box h4 {
+        font-size: 16px;
+        width: 180px;
+    }
+
+    .product-box .in-text-link {
+        font-size: 15px;
+        opacity: 1;
+        background-color: black;
+        color: white;
+        margin-bottom: 50px;
     }
 
 
@@ -179,10 +174,14 @@ h4 {
     background-color: #fbf3f3;
     position: relative;
     z-index: 99;
+    border: 1px solid black;
+    border-bottom: none;
 }
 
 .sample-nav img {
     width: 100%;
+    border: 1px solid black;
+    border-top:none;
 }
 
 .sample-nav a {
@@ -192,6 +191,7 @@ h4 {
 
 .sample-nav .nav-link img {
     width: 20px;
+    border:none;
 
 
 }
@@ -206,32 +206,8 @@ h4 {
     .sample-nav .nav-link img {}
 }
 
-/*=======FORM ELEMENTS===========*/
-.sample form {
-    display: flex;
-    border: 1px solid black;
-    padding: 39px;
-    padding-right: 0;
-    box-shadow: 3px 3px 3px;
-}
-
-.sample form img {
-    margin-right: 50px;
-    width: 250px;
-    height: 360px;
-    padding-top: 10px;
-}
-
-@media (max-width: 810px) {
-    .sample form img {
-        visibility: hidden;
-        position: absolute;
-    }
 
 
-
-
-}
 
 
 
